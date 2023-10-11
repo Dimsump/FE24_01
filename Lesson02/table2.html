@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table in HTML5</title>
+</head>
+
+<body>
+    <h1>Table in HTML5</h1>
+    <table border="1" width="500px" align="center">
+        <!--Vung tiêu đề-->
+        <thead>
+            <th>Mã sinh viên</th>
+            <th>Học và tên</th>
+            <th>Điểm</th>
+        </thead>
+        <!-- Vung nội dung-->>
+        <tbody>
+            <tr>
+                <td>Sv001</td>
+                <td>Trịnh Văn A</td>
+                <td>10</td>
+            <tr>
+                <td>Sv001</td>
+                <td>Trịnh Văn B</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Sv001</td>
+                <td>Trịnh Văn C</td>
+                <td>10</td>
+            </tr>
+    </table>
+    </tbody>
+    <!--Phần thống kê cuối cùng-->
+    <tfoot>
+
+    </tfoot>
+    <table>
+        <hr>
+        <h2>Table với các thuộc tính: colspan, rowspan, cellspacing, cellpadding, ... align, bgcolor
+        </h2>
+        <table border="1" width="100%" cellspacing="0" cellpadding="5">
+            <thead>
+                <tr>
+                    <th rowspan="2">Mã</th>
+                    <th rowspan="2">Học tên</th>
+                    <th colspan="3">Điểm thi</th>
+                </tr>
+                <tr>
+                    <th>Toán</th>
+                    <th>Văn</th>
+                    <th>Anh</th>
+                </tr>
+            </thead>
+            <tbody bgcolor="yellow">
+                <tr>
+                    <td>SV001</td>
+                    <td>Trần Văn A</td>
+                    <th align="right">10</th>
+                    <td align="right">10</td>
+                    <td align="right">9</td>
+                </tr>
+                <tr>
+                    <td>SV002</td>
+                    <td>Trần B</td>
+                    <th align="right">9</th>
+                    <td align="right">10</td>
+                    <td align="right">9</td>
+                </tr>
+            </tbody>
+            <tfoot >
+                <tr bgcolor="green">
+                    <th colspan="2" align="right">Trung bình</th>
+                    <th align="cmeter">...</th>
+                    <th align="cmeter">...</th>
+                    <th align="cmeter">...</th>
+                </tr>
+                <tr bgcolor="pink""">
+                    <th colspan="2" align="right">Max</th>
+                    <th align="cmeter">...</th>
+                    <th align="cmeter">...</th>
+                    <th align="cmeter">...</th>
+                </tr>
+                <tr>
+                    <th colspan="2" align="right">MIN</th>
+                    <th align="cmeter">...</th>
+                    <th align="cmeter">...</th>
+                    <th align="cmeter">...</th>
+                </tr>
+            </tfoot>
+
+        </table>
+    </table>
+</body>
+
+</html>
